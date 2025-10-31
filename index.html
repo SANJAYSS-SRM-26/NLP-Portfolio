@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Sanjay's Portfolio</title>
+    <meta name="description" content="Portfolio website for the Natural Language Processing course: projects, reflections, objectives, achievements.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="Homepage">
+                <span class="brand-mark" aria-hidden="true">λ</span>
+                <span class="brand-text">NLP Portfolio</span>
+            </a>
+            <nav class="nav" aria-label="Primary" role="navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Menu</span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#course">Course</a></li>
+                    <li><a href="#objectives">Objectives</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <!-- Hero / Introduction -->
+        <section id="home" class="section hero" aria-labelledby="intro-title">
+            <div class="container grid-hero">
+                <div class="hero-copy reveal">
+                    <h1 id="intro-title" class="display">SANJAY S S</h1>
+                    <p class="subtitle">RA2211003010014</p>
+                    <div class="meta">
+                        <span class="badge">Natural Language Processing</span>
+                        <span class="badge badge-alt">21CSE356T</span>
+                    </div>
+                    <p class="lead">I am passionate about enabling computers to understand human language. This portfolio showcases my journey through NLP from text preprocessing and embeddings to sequence models, transformers, and real-world applications.</p>
+                    <div class="hero-cta">
+                        <a class="button" href="#course">Explore the Course</a>
+                        <a class="button button-ghost" href="#achievements">See Achievements</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal" aria-hidden="true">
+                    <div class="orb"></div>
+                    <div class="mesh">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract AI language graphic">
+                            <defs>
+                                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="var(--accent)"/>
+                                    <stop offset="100%" stop-color="var(--accent-2)"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#grad)" d="M46.4,-69.5C58.8,-60.9,65.6,-45.5,71.4,-30.2C77.3,-15,82.2,0.2,78.9,13.1C75.7,25.9,64.3,36.3,52.3,46.8C40.3,57.2,27.6,67.5,13.1,73C-1.5,78.5,-17.9,79.1,-32.3,73.6C-46.6,68,-58.9,56.3,-66.2,42.2C-73.6,28,-76,11.5,-73.8,-3.6C-71.6,-18.8,-64.9,-32.7,-55.1,-43.6C-45.3,-54.5,-32.4,-62.3,-18.1,-70.1C-3.9,-77.9,12.8,-85.2,26.8,-81.2C40.7,-77.2,52.1,-61.9,46.4,-69.5Z" transform="translate(100 100)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Introduction -->
+        <section id="course" class="section section-alt" aria-labelledby="course-title">
+            <div class="container narrow reveal">
+                <h2 id="course-title" class="section-title">About the Course</h2>
+                <p class="section-intro">The Natural Language Processing (21CSE356T) course introduces core theories and practical methodologies to analyze and build systems capable of understanding human language. Bridging computing and linguistics, it systematically covers fundamental to advanced NLP techniques.</p>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">🔤</div>
+                        <div>
+                            <h3>Language Fundamentals</h3>
+                            <p>Understand the fundamentals behind language processing and techniques for word and sentence level analysis. Explore tokenization, stemming, lemmatization, morphological, and syntactic parsing.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">📝</div>
+                <div>
+                    <h3>Syntax & Structure</h3>
+                    <p>Analyze syntactic structures and probabilistic context-free grammars; learn parts of speech tagging and dependency parsing to uncover deep grammatical patterns in text.</p>
+                </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">🔗</div>
+                <div>
+                    <h3>Semantics & Discourse</h3>
+                    <p>Delve into knowledge representation, semantic analysis, and discourse relations using features like word embeddings, word sense disambiguation, and coreference resolution for contextual understanding.</p>
+                </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon" aria-hidden="true">🤖</div>
+                <div>
+                    <h3>Machine Learning & Applications</h3>
+                    <p>Recognize the significance of transformer-based models (e.g., BERT, RoBERTa), apply neural approaches to problems like classification, information extraction, summarization, translation, and conversational AI.</p>
+                </div>
+                    </li>
+                </ul>
+                <p class="callout">Expected outcomes include the ability to preprocess text data, train and evaluate models, interpret results responsibly, and deploy end-to-end NLP solutions.</p>
+            </div>
+        </section>
+
+        <!-- Learning Objectives -->
+        <section id="objectives" class="section" aria-labelledby="obj-title">
+            <div class="container reveal">
+                <h2 id="obj-title" class="section-title">Learning Objectives by Unit</h2>
+        
+                <div class="accordion">
+                    <details class="card" open>
+                        <summary class="card-header">
+                            <span class="card-title">Unit 1 - Overview and Word Level Analysis</span>
+                        </summary>
+                        <div id="unit1" class="card-body">
+                            <ul>
+                                <li>Understand the basics of NLP, key applications, and components of NLP pipelines.</li>
+                                <li>Familiarity with regular expressions, morphological analysis, tokenization, stemming, and lemmatization.</li>
+                                <li>Apply text preprocessing techniques including TF, IDF, TF-IDF, parts of speech tagging, N-gram models, and smoothing.</li>
+                            </ul>
+                        </div>
+                    </details>
+        
+                    <details class="card">
+                        <summary class="card-header">
+                            <span class="card-title">Unit 2 - Syntax Analysis</span>
+                        </summary>
+                        <div id="unit2" class="card-body">
+                            <ul>
+                                <li>Comprehend context-free grammars and syntactic parsing for English.</li>
+                                <li>Perform top-down and bottom-up parsing, including CKY and Earley algorithms.</li>
+                                <li>Understand and apply probabilistic context-free grammars to analyze sentences.</li>
+                            </ul>
+                        </div>
+                    </details>
+        
+                    <details class="card">
+                        <summary class="card-header">
+                            <span class="card-title">Unit 3 - Semantic and Discourse Analysis</span>
+                        </summary>
+                        <div id="unit3" class="card-body">
+                            <ul>
+                                <li>Represent meaning using lexical semantics, word senses, and relations.</li>
+                                <li>Apply techniques like word embeddings, Word2Vec, CBOW, Skip-gram, and GloVe.</li>
+                                <li>Analyze discourse coherence, structure, coreference resolution, and perform tasks like named entity recognition and semantic segmentation.</li>
+                            </ul>
+                        </div>
+                    </details>
+        
+                    <details class="card">
+                        <summary class="card-header">
+                            <span class="card-title">Unit 4 - Language Models</span>
+                        </summary>
+                        <div id="unit4" class="card-body">
+                            <ul>
+                                <li>Understand and develop recurrent neural networks (RNN), LSTM, and transformer-based models for NLP.</li>
+                                <li>Apply attention mechanisms and multi-headed attention in deep learning for text.</li>
+                                <li>Execute text classification, text generation, and related tasks using advanced models like BERT and RoBERTa.</li>
+                            </ul>
+                        </div>
+                    </details>
+        
+                    <details class="card">
+                        <summary class="card-header">
+                            <span class="card-title">Unit 5 - NLP Applications</span>
+                        </summary>
+                        <div id="unit5" class="card-body">
+                            <ul>
+                                <li>Develop solutions for chatbot applications and information retrieval.</li>
+                                <li>Implement systems for conversation, intent detection, and semantic search.</li>
+                                <li>Perform summarization, question answering, and machine translation using extractive and abstractive approaches.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Reflection -->
+        <section id="reflection" class="section section-alt" aria-labelledby="reflection-title">
+            <div class="container reveal">
+                <h2 id="reflection-title" class="section-title">Reflection</h2>
+                <ol class="timeline" role="list">
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <h3 class="timeline-title">What new skills did I gain?</h3>
+                            <p>
+                                Acquired expertise in text preprocessing, such as stemming, lemmatization, and syntactic parsing, plus practical knowledge in feature extraction like TF, IDF, and TF-IDF. Learned how to design and analyze context-free grammars, implement semantic and discourse analysis with word embeddings, and build modern neural networks including RNNs, LSTMs, and transformer-based models for NLP. Gained experience in developing and deploying projects for tasks like chatbots, summarization, and information retrieval.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <h3 class="timeline-title">What was most challenging?</h3>
+                            <p>
+                                Mastering advanced parsing algorithms (CKY, Earley) and managing the complexity of semantic and discourse analysis proved difficult. Balancing fairness, interpretability, and performance while tuning large language models required deep experimentation. Applying transformer architectures effectively to diverse tasks, while controlling for data bias and model overfitting, was especially challenging given the breadth of real-world applications.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <h3 class="timeline-title">How did I improve from start to end?</h3>
+                            <p>
+                                Progressed from foundational rule-based approaches and classical ML models to mastering neural architectures and transfer learning. Enhanced my ability to prepare and clean data, select suitable features, interpret complex output from neural networks, and optimize models for deployment in real-world scenarios. Collaborative projects and iterative experimentation further strengthened both technical and soft skills throughout the semester.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <h3 class="timeline-title">How can I apply this knowledge?</h3>
+                            <p>
+                                This NLP knowledge can be applied to building advanced chatbots for customer support, developing intelligent information retrieval and search systems, summarizing complex documents, and enabling multilingual translation tools. It prepares me to tackle real challenges in healthcare (analyzing medical records), business intelligence, and education (automated feedback and grading), and empowers lifelong learning in AI and language technologies.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        
+
+        <!-- Achievements / Highlights -->
+        <section id="achievements" class="section" aria-labelledby="achievements-title">
+            <div class="container reveal">
+                <h2 id="achievements-title" class="section-title">Achievements & Highlights</h2>
+                <p class="section-intro">Key projects and a case study demonstrating advanced NLP skills and techniques.</p>
+        
+                <div class="gallery-grid">
+                    <article class="tile">
+                        <a href="https://github.com/SANJAYSS-SRM-26/Named-Entity-Recognition-using-BiLSTM" target="_blank" rel="noopener">
+                            <div class="tile-media" role="img" aria-label="NER BiLSTM Project thumbnail">
+                                <img src="ner image.jpg" alt="Named Entity Recognition with BiLSTM Thumbnail" loading="lazy" />
+                            </div>
+                        </a>
+                        <div class="tile-body">
+                            <h3 class="tile-title">Named Entity Recognition with BiLSTM</h3>
+                            <p>Developed a BiLSTM-based model for Named Entity Recognition, achieving strong token classification performance on custom and benchmark datasets.</p>
+                        </div>
+                    </article>
+                    <article class="tile">
+                        <a href="https://github.com/SANJAYSS-SRM-26/Automated-Lecture-Transcriber-and-Summarizer" target="_blank" rel="noopener">
+                            <div class="tile-media" role="img" aria-label="Lecture Transcriber thumbnail">
+                                <img src="summarizer.png" alt="Automated Lecture Transcriber Thumbnail" loading="lazy" />
+                            </div>
+                        </a>
+                        <div class="tile-body">
+                            <h3 class="tile-title">Automated Lecture Transcriber & Summarizer</h3>
+                            <p>Designed an end-to-end system to transcribe lectures and generate concise summaries using transformer-based sequence-to-sequence architectures.</p>
+                        </div>
+                    </article>
+                    <article class="tile">
+                        <a href="NLP - BERT CASE STUDY.pdf" target="_blank" rel="noopener">
+                            <div class="tile-media" role="img" aria-label="Sentiment Analysis Case Study thumbnail">
+                                <img src="sentiment.jpg" alt="Sentiment Analysis Case Study Thumbnail" loading="lazy" />
+                            </div>
+                        </a>
+                        <div class="tile-body">
+                            <h3 class="tile-title">Sentiment Analysis on Netflix Customer Feedback (Case Study)</h3>
+                            <p>Conducted a case study utilizing BERT to analyze customer sentiment, uncovering insights to improve user experience and service design.</p>
+                        </div>
+                    </article>
+                </div>
+        
+                <div class="slider" aria-label="Certification slider">
+                    <div class="slider-track" tabindex="0">
+                        <div class="badge-card" role="group" aria-label="Certification 1 of 1">
+                            <span class="badge-icon" aria-hidden="true">🎓</span>
+                            <div>
+                                <h4>Certificate: AWS Machine Learning Foundations</h4>
+                                <p>AWS Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    <footer id="contact" class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">λ</span>
+                <span class="brand-text">NLP Portfolio</span>
+            </div>
+            <ul class="social" role="list" aria-label="Social links">
+                <li>
+                    <a href="https://github.com/SANJAYSS-SRM-26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.82 2.8 1.29 3.48.98.11-.79.42-1.29.76-1.59-2.67-.3-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.46 11.46 0 0 1 6.01 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.61-5.48 5.91.43.37.81 1.11.81 2.25v3.33c0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:ss9152@srmist.edu.in" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 13.065 1.5 6.75V18A2.25 2.25 0 0 0 3.75 20.25h16.5A2.25 2.25 0 0 0 22.5 18V6.75l-10.5 6.315Zm10.5-9.315v-.435A2.25 2.25 0 0 0 20.25 1.065H3.75A2.25 2.25 0 0 0 1.5 3.315v.435l10.5 6.315 10.5-6.315Z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sanjay-s-s/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.49 1s2.49 1.12 2.49 2.5zM.22 8.29h4.56V24H.22V8.29zM8.47 8.29h4.37v2.13h.06c.61-1.15 2.1-2.37 4.33-2.37 4.63 0 5.48 3.05 5.48 7.02V24h-4.56v-6.93c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.66V24H8.47V8.29z"/></svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">© <span id="year"></span> SANJAY S S - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
